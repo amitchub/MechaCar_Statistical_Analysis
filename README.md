@@ -43,13 +43,47 @@ The R^2 is value is 0.7149.  There appears to be a strong correlation.
 - Sample Mean is 1498.78
 - Population Means is 1500.
 
-![Pic 3](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/3_tot_sum.PNG)
+![Pic 3](https://github.com/amitchub/MechaCar_Statistical_Analysis/blob/main/Images/Image003.PNG)
 
 ### Summary by Manufacturing Lot Number
 Manufacturing Lot numbers Means are similar to the population mean and the sample mean.  
 
-![Pic 4](https://github.com/Baylex/MechaCar_Statistical_Analysis/blob/main/Images/4_lot_sum.PNG)
+![Pic 4](https://github.com/amitchub/MechaCar_Statistical_Analysis/blob/main/Images/Image004.PNG)
 
 - The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?      
 
 Variance is 62 < 100, which is within the specifications of staying under 100 PSI.  Lot 3 is much more variable (170 > 100), which is contributing to variance.  Lot 1 and Lot 2 have much lower variance values (Lot 1 is 1 and Lot 2 is 7).  
+
+## T-Tests on Suspension Coils
+### T-test for all Lots
+All Lots: p-value = 1.0 and alpha = 0.05   
+1.0 > .05, which means the All Lots isn't statistically significant from the normal distribution.  The mean is within the 95% confidence interval.
+
+![Pic 5](https://github.com/amitchub/MechaCar_Statistical_Analysis/blob/main/Images/Image005.PNG)
+
+### T-test for Lot 1
+Lot 1: p-value = 1.568e-11 and alpha = 0.05    
+1.568e-11 < .05, which means it is statistically significant from the normal distribution and normality cannot be assumed.  The mean is within the 95% confidence interval.
+
+![Pic 6](https://github.com/amitchub/MechaCar_Statistical_Analysis/blob/main/Images/Image006.PNG)
+
+### T-test for Lot 2
+Lot 2: p-value = 0.0005911 amd alpha = .05 
+
+0.0005911 < .05, which means it is statistically significant from the normal distribution and normality cannot be assumed.  The mean is within the 95% confidence interval.
+ 
+![Pic 7](https://github.com/amitchub/MechaCar_Statistical_Analysis/blob/main/Images/Image007.PNG)
+
+### T-test for Lot 3
+Lot 3: p-value = 0.1589 amd alpha = .05   
+0.1589 > .05, which means it isn't statistically significant from the normal distribution.  The mean is within the 95% confidence interval.
+
+![Pic 8](https://github.com/amitchub/MechaCar_Statistical_Analysis/blob/main/Images/Image008.PNG)
+
+The overall manufacturing and Lot 3 show a normal distribution.
+
+## Study Design: MechaCar vs Competition
+When comparing MechaCar to its competitor’s other metrics that could be of interest to a consumer could include cost, car color, city fuel efficiency, highway fuel efficiency, horsepower, maintenance cost, or safety rating.
+
+- What metric or metrics are you going to test?   
+The next metrics to test will be the city MPG and the highway MPG. 
